@@ -1,10 +1,131 @@
-h1{
-    position: absolute;
-    display: flexbox;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    top: 15%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 70px;
+:root{
+    --cor1: #033D1E;
+    --cor2: #FFC72C;
+    --cor3: #ffc72cc5;
+}
 
+body {
+    height: 100vh;
+    color: white;
+    background-color: var(--cor1);
+ 
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 100vw;
+}
+
+
+#nav{
+    display: flex;
+    width: 100vw;
+    align-items: end;
+    
+    
+}
+
+#logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#logo>h1{
+    margin: 5px;
+}
+
+#linha{
+    width: 2px;
+    height: 80%;
+    background-color: white;
+}
+
+nav{
+    display: flex;
+    align-items: end;
+    flex-direction: row;
+    justify-content: center;
+    right: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px ;
+    flex: 1 0;
+    padding: 2px;
+}
+
+nav>a{
+    display: flex;
+    margin: 5px;
+    border: 1px solid white;
+    padding: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    min-height: 50px;
+    align-items: center;
+
+    
+}
+
+nav>a:hover{
+    color: black;
+    background-color: white;
+}
+
+main{
+    background-color: var(--cor3);
+    width: 100vw;
+}
+
+#html{
+    clip-path: circle(50% at 50% 50%);
+}
+
+.box{
+    width: 300px;
+    height: 300px;
+    background-color: white; 
+    margin: 20px;
+    border-radius: 12.5%;
+    box-shadow: rgba(0, 0, 0, 0.178) 10px 10px;
+    overflow: hidden;
+
+}
+
+main>section{
+    height: 500px;
+    border: 1px solid white;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+main>section>h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--cor2);
+    padding: 10px;
+
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+#cabecalho{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
 }
