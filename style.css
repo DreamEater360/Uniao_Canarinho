@@ -109,7 +109,7 @@ main{
     display: flex;
     height: 100px;
     width: calc(100vw - 20vw);
-    
+    border: 1px solid white;
 }
 
 .box{
