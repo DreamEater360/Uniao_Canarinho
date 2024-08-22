@@ -7,8 +7,7 @@
 
 :root{
     --cor1: #033D1E;
-    --cor2: #FFC72C;
-    --cor3: #ffc72cc5;
+    --cor2: #ffc72c;
 
 }
 
@@ -21,62 +20,43 @@ body {
 
 header{
     display: flex;
-    flex-direction: row;
     height: 100px;
-
-}
-
-.nav{
-    display: flex;
-    justify-content: baseline;
-    padding: 5px;
+    align-items: center;
+    justify-content: space-between;
+    
 
 }
 
 details > summary{
     list-style: none;
+    direction: rtl;
 
 }
 
 #logo{
+    grid-area: "logo";
     display: flex;
     flex-direction: row;
     align-items: center;
-
+    margin-left: 10px;
+    
 }
 
 #logo>h1{
-    margin: 5px;
+    margin-left: 20px;
+    font-family: "Krona One", sans-serif;
+    font-size: 18px;
+    text-decoration: underline;
 
 }
 
-#linha{
-    width: 2px;
-    height: 80%;
-    background-color: white;
-
-}
-
-nav{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-    right: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 13px ;
-    flex: 1 0;
-    padding: 2px;
-
-}
-
-#esp{
-    margin-left: 0px;
+.esp{
+    margin-right: 0px;
 }
 
 nav>a{
     display: flex;
-    margin: 5px;
+    margin: 10px;
     border: 1px solid white;
     padding: 5px;
     cursor: pointer;
@@ -84,9 +64,14 @@ nav>a{
     color: white;
     font-weight: bold;
     text-align: center;
-    min-height: 50px;
+    min-height: 40px;
     align-items: center;  
 
+
+}
+
+#lenSele{
+    margin-bottom: 100vh;
 }
 
 nav>a:hover{
@@ -94,43 +79,41 @@ nav>a:hover{
     background-color: white;
 
 }
-
-main{
-    background-color: var(--cor3);
+#menu{
+    margin-right: 0;
+    background-color: var(--cor1);
+    top: 0;
+    right: 0;
+    position: absolute;
     
 }
 
-#html{
-    clip-path: circle(50% at 50% 50%);
 
+#menu-icon{
+    font-size: 30px;
 }
 
-#navegation{
-    display: flex;
-    height: 100px;
-    width: calc(100vw - 20vw);
-    border: 1px solid white;
-}
-
-.box{
-    height: auto;
-
+main{
+    background-color: var(--cor2);
+    
 }
 
 main>section{
     height: 500px;
-    border: 1px solid white;
-    border-bottom: 0;
-    border-left: 0;
-    border-right: 0;
-
+   
 }
 
-main>section>h2{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: var(--cor2);
-    padding: 10px;
+#sobre{
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+}
 
+#sobre > div{
+    width: 60vw;
+    height: 300px;
+    margin: 0 0 0 10vw;
+    background-color: white;
 }
 
 footer{
@@ -139,11 +122,5 @@ footer{
     justify-content: center;
     padding: 10px;
     font-size: 14px;
-
-}
-
-#cabecalho{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
 
 }
