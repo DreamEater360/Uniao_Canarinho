@@ -30,6 +30,7 @@ header{
 details > summary{
     list-style: none;
     direction: rtl;
+    cursor: pointer;
 
 }
 
