@@ -4,7 +4,7 @@
     text-justify: newspaper;
     color: black;
     font-family: "DM Mono", monospace;
-    font-size: 10px;
+    font-size: 14px;
     flex-direction: column;
     border: 1px solid white;
     margin: 20px;
@@ -16,7 +16,8 @@
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     width: 50%;
-
+    text-align: justify;
+    align-items: center;
 
 }
 
@@ -24,4 +25,35 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.imgDes{
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    border-radius: 10px;
+    margin: 30px;
+    width: 500px;
+}
+
+@media (min-width: 430px) and (max-width: 900px ){
+    .box{
+        font-size: 14px;
+        width: 80%;
+    }
+
+    .imgDes{
+        width: 500px;
+    }
+
+
+}
+
+@media (max-width: 430px){
+    .box{
+        font-size: 10px;
+        width: 80%;
+    }
+
+    .imgDes{
+        width: 250px;
+    }
 }
