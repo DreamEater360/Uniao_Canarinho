@@ -153,6 +153,14 @@ footer{
     
 }
 
+footer>p>a{
+    color: white;
+}
+
+footer>p>a:hover{
+    color: black;
+}
+
 @media (min-width: 430px) and (max-width: 900px ){
 
     #logo>h1{
