@@ -18,20 +18,26 @@
     align-items: center;
 }
 
-a{
+.box>a{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     text-decoration: none;
+    color: black;
+    text-align: justify;
 }
+
 
 footer>p>a{
     text-decoration: underline;
+    color: white;
 }
 
-.box>img{
+.box>a>img{
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     width: 200px;
     height: 200px;
     margin-top: 20px;
-    overflow: hidden;
     border-radius: 10px;
 }
 
@@ -47,7 +53,7 @@ footer>p>a{
         font-size: 15px;
     }
 
-    .box>img{
+    .box>a>img{
         width: 200px;
         height: 200px;
     }
@@ -64,7 +70,7 @@ footer>p>a{
         width: 50%;
     }
 
-    .box>img{
+    .box>a>img{
         width: 150px;
         height: 150px;
     }
